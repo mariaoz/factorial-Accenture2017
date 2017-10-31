@@ -51,4 +51,9 @@ public class FactorialTest {
 		assertEquals(expectedValue, result);
 
 	}
+	@Test(expected= RuntimeException.class)
+	public void shouldFactorialOfNegativeNumberSendAnException() {
+		factorial.compute(-1);
+
+	}
 }
